@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Hello'
         tool 'ant'
-        sh '$ant all'
+        sh '${tool \'ant\'}/bin/ant all'
       }
     }
   }
