@@ -6,7 +6,7 @@ pipeline {
         echo 'Hello'
         tool 'ant'
         script {
-          ${tool 'ant'} all
+          ant all
         }
         
       }
