@@ -6,7 +6,9 @@ pipeline {
         echo 'Hello'
         tool 'ant'
         script {
-          ant all
+          withEnv(["PATH=${tool 'ant'}/bin"]) {
+            sh "ant all"
+          }
         }
         
       }
