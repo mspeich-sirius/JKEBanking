@@ -5,6 +5,10 @@ pipeline {
       steps {
         echo 'Hello'
         tool 'ant'
+        script {
+          ${tool 'ant'} all
+        }
+        
       }
     }
   }
